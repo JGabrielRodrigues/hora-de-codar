@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>atividade 21</title>
+
+    <script>
+        var avaliacao1 = parseFloat(prompt("digite a primeira avaliacção")) ; 
+        var avaliacao2  = parseFloat(prompt("digite a segunda avaliacção")) ; 
+        var avaliacaoopitativa = parseFloat(prompt("digite a avaliacção Opitativa")) ;
+        var  teste1  =  ( ( avaliacao2  +  avaliacaooptativa ) / 2 ) ;
+        var  teste2  =  ( ( avaliacao1  +  avaliacaooptativa ) / 2 ) ;
+        var  teste3  =  ( ( avaliacao2  +  avaliacao1 ) / 2 ) ;
+    
+
+            if  ( avaliacao1  <=  avaliacao2  &&  avaliacao1  <=  avaliacaooptativa )  {
+                documento.write ( "A média do semestre é: "  +  ( ( avaliacao2  +  avaliacaooptativa ) / 2 )  ) ;
+            }
+
+            else  if  ( avaliacao2  <=   avaliacao1  &&  avaliacao2  <=  avaliacaooptativa )  {
+                documento.write ( "A média do semestre é: "  +  ( ( avaliacao1  +  avaliacaooptativa ) / 2 )  ) ;
+            }
+
+            else  if  ( avaliacaooptativa  <=  avaliacao1  &&  avaliacaooptativa  <=  avaliacao2 )  {
+                documento.write ( "A média do semestre é: "  +  ( ( avaliação2  +  avaliação1 ) / 2 )  ) ;
+            }
+
+            if  ( teste1  &&  teste2  &&  teste3  >=  6 )  {
+                documento.write ( "<br><br> APROVADO" )
+            }  else  if  ( teste1  &&  teste2  &&  teste3  <  3 )  {
+                documento.write ( "<br><br> REPROVADO" )
+            }  else  if  ( teste1  &&  teste2  &&  teste3  >=  3,5  &&  teste1  &&  teste2  &&  teste3  <  6  )  { 
+                documento.write ( "<br><br> EXAME" )
+            }
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

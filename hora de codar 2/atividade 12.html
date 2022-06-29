@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>atividade 12</title>
+
+    <script>
+
+        var metros = parseInt(prompt ("digite o tamanho da pista")) ;
+        var voltas = parseInt(prompt ("digite o total de voltas")) ;
+        var reabastecimento = parseInt(prompt ("digite o total de paradas")) ;
+        var consumo = parseInt(prompt ("digite o consumo de carro")) ;
+
+        var conversaokm = (metros * voltas ) / 1000 ;
+        var minimolitros =(conversaokm * reabastecimento) / consumo ;
+        var totallitros = conversaokm / consumo
+
+        alert ( "O minimo de litros para a primeira parada é: "  +  minimoLitros ) ;
+        alert ( "O tamanho da pista: "  +  conversaoKm  +  "Km" ) ;
+        alert ( "O total de litros é de:"  +  totalLitros ) ;
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
